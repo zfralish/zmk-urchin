@@ -6,8 +6,11 @@
 
 #include "urchin.dtsi"
 
-&kscan0 {
+&default_transform {
     col-offset = <5>;
+};
+
+&kscan0 {
     diode-direction = "col2row";
     col-gpios
         = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL0
