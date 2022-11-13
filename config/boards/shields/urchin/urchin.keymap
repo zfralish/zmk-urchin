@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
+ * Copyright (c) 2020 Duccio Breschi
  *
  * SPDX-License-Identifier: MIT
  */
@@ -12,6 +12,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+        label = "Default";
 
         // Minimal layout for testing purposes.
         default_layer {
