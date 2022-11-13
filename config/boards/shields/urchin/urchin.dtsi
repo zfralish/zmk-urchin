@@ -9,7 +9,7 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan_left;
+        zmk,kscan = &kscan_0;
         zmk,matrix_transform = &default_transform;
     };
 
@@ -26,12 +26,8 @@
         >;
     };
 
-    /omit-if-no-ref/ kscan_left: kscan_0 {        
+    kscan_left: kscan_0 {        
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN0";
-    };
-    /omit-if-no-ref/ kscan_right: kscan_1 {        
-        compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN1";
     };
 };
