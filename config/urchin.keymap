@@ -64,7 +64,7 @@
 
         // Base alpha layer
 				default_layer {
-						label = "Default";
+						label = "Base";
 						bindings = <
 						&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
 						&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp IT_OGRV
@@ -75,7 +75,7 @@
 
         // Numbers and high frequency symbols
 				sym_layer {
-						label = "Symbols";
+						label = "Sym.";
 						bindings = <
 						&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 						&kp IT_LESS &kp IT_USD &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT  &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
@@ -86,7 +86,7 @@
 
         // Main modifiers and arrow keys
 		    ext_layer {
-						label = "Extend";
+						label = "Mods";
 						bindings = <
 						&kp ESC  &trans &trans  &trans  &trans    			        &kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
 						&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
@@ -97,7 +97,7 @@
 
         // Function keys with modifiers
 				fnc_layer {
-						label = "Function";
+						label = "FRow";
 						bindings = <
 						&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
 						&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
@@ -108,7 +108,7 @@
 
         // Low frequency symbols.
 				symbols_2_layer {
-						label = "Symbols2";
+						label = "Sym.2";
 						bindings = <
 						&kp IT_CARET &kp IT_UNDER &kp IT_PND &kp IT_EUR &kp IT_HASH         &none &none &none &none &none 
 						&kp IT_BKTK &kp IT_TILDE &kp IT_BSLH &kp IT_PIPE &kp IT_AND         &none &none &none &none &none
@@ -119,7 +119,7 @@
 
         // Used to type regional accents.
 				accent_layer {
-						label = "Accents";
+						label = "Accent";
 						bindings = <
 						&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
 						&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
@@ -130,7 +130,7 @@
 
         // Used to change the keyboard's settings.
 				settings_layer {
-						label = "Settings";
+						label = "Sett.";
 						bindings = <
 						&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &bootloader 
 						&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
