@@ -5,7 +5,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
       # bravekarma
     - name: caksoylar
-      url-base: https://github.com/caksoylar/zmk
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: caksoylar
