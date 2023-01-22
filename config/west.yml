@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: caksoylar
-      revision: mods+battery-perc
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
