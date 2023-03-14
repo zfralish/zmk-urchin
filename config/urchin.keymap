@@ -31,11 +31,11 @@
 		// Enables holding the first mod-tap key
 		// by performing a tap-release-hold sequence.
 		// To use it: "&qt KEYCODE1 KEYCODE2"
-		qt: behavior_tap_preferred {
+		qt: quick_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "QUICK_TAP";
 			#binding-cells = <2>;
-			flavor = "tap-preferred";
+			flavor = "hold-preferred";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <200>;
 			bindings = <&kp>, <&kp>;
