@@ -25,17 +25,23 @@
     ignore-modifiers;
 };
 
-qt: behavior_tap_preferred {
-    compatible = "zmk,behavior-hold-tap";
-    label = "QUICK_TAP";
-    #binding-cells = <2>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <125>;
-    bindings = <&kp>, <&kp>;
-};
 
 / {
+	behaviors {
+		// Enables holding the first mod-tap key
+		// by performing a tap-release-hold sequence.
+		// To use it: "&qt KEYCODE1 KEYCODE2"
+		qt: behavior_tap_preferred {
+				compatible = "zmk,behavior-hold-tap";
+				label = "QUICK_TAP";
+				#binding-cells = <2>;
+				flavor = "tap-preferred";
+				tapping-term-ms = <200>;
+				quick-tap-ms = <125>;
+				bindings = <&kp>, <&kp>;
+		};
+	};
+
 	macros {
 		// sometimes my device thinks a modifier is being held down
 		// pressing all modifiers fixes it.
@@ -54,7 +60,7 @@ qt: behavior_tap_preferred {
 			timeout-ms = <200>;
 			key-positions = <32 33>;
 			bindings = <&mo ACCENT>;
-				};
+		};
 		// internal-left & external-right thumb keys
 		combo_sym2 {
 			timeout-ms = <200>;
@@ -67,6 +73,8 @@ qt: behavior_tap_preferred {
 			key-positions = <30 31>;
 			bindings = <&mo SETTINGS>;
 		};
+		// left index & middle fingers (home-row)
+		// hold control & space for Adobe workflow
 		combo_ctrl_space {
 			timeout-ms = <200>;
 			key-positions = <12 13>;
