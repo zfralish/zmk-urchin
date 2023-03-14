@@ -25,6 +25,16 @@
     ignore-modifiers;
 };
 
+qt: behavior_tap_preferred {
+    compatible = "zmk,behavior-hold-tap";
+    label = "QUICK_TAP";
+    #binding-cells = <2>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
+    bindings = <&kp>, <&kp>;
+};
+
 / {
 	macros {
 		// sometimes my device thinks a modifier is being held down
@@ -37,48 +47,47 @@
 		};
 	};
 
-    combos {
-			compatible = "zmk,combos";
-			// both right thumb keys
-			combo_accent {
-				timeout-ms = <200>;
-				key-positions = <32 33>;
-				bindings = <&mo ACCENT>;
-					};
-			// internal-left & external-right thumb keys
-			combo_sym2 {
-				timeout-ms = <200>;
-				key-positions = <31 33>;
-				bindings = <&mo SYM2>;
-			};
-			// both left thumb keys
-			combo_settings {
-				timeout-ms = <200>;
-				key-positions = <30 31>;
-				bindings = <&mo SETTINGS>;
-			};
-			combo_ctrl_space {
-				timeout-ms = <200>;
-				key-positions = <13 14>;
-				bindings = <&kp LC(SPACE)>;
-			};
-    };
+	combos {
+		compatible = "zmk,combos";
+		// both right thumb keys
+		combo_accent {
+			timeout-ms = <200>;
+			key-positions = <32 33>;
+			bindings = <&mo ACCENT>;
+				};
+		// internal-left & external-right thumb keys
+		combo_sym2 {
+			timeout-ms = <200>;
+			key-positions = <31 33>;
+			bindings = <&mo SYM2>;
+		};
+		// both left thumb keys
+		combo_settings {
+			timeout-ms = <200>;
+			key-positions = <30 31>;
+			bindings = <&mo SETTINGS>;
+		};
+		combo_ctrl_space {
+			timeout-ms = <200>;
+			key-positions = <12 13>;
+			bindings = <&kp LC(SPACE)>;
+		};
+	};
 
-    keymap {
+	keymap {
 		compatible = "zmk,keymap";
-
-        // Base alpha layer
+		// Base alpha layer
 		default_layer {
 			label = "Base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
 			&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp IT_OGRV
 			&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp IT_UGRV
-							&mo EXT &mt LSHIFT SPACE           &kp SPACE &sl SYM
+							&mo EXT &qt LSHIFT SPACE           &kp SPACE &sl SYM
 			>;
 		};
 
-        // Numbers and high frequency symbols
+		// Numbers and high frequency symbols
 		sym_layer {
 			label = "Sym.";
 			bindings = <
@@ -89,7 +98,7 @@
 			>;
 		};
 
-        // Main modifiers and arrow keys
+		// Main modifiers and arrow keys
 		ext_layer {
 			label = "Mods";
 			bindings = <
@@ -100,7 +109,7 @@
 			>;
 		};
 
-        // Function keys with modifiers
+		// Function keys with modifiers
 		fnc_layer {
 			label = "FRow";
 			bindings = <
@@ -111,7 +120,7 @@
 			>;
 		};
 
-        // Low frequency symbols.
+		// Low frequency symbols.
 		symbols_2_layer {
 			label = "Sym.2";
 			bindings = <
@@ -122,7 +131,7 @@
 			>;
 		};
 
-        // Used to type regional accents.
+		// Used to type regional accents.
 		accent_layer {
 			label = "Accent";
 			bindings = <
@@ -133,7 +142,7 @@
 			>;
 		};
 
-        // Used to change the keyboard's settings.
+		// Used to change the keyboard's settings.
 		settings_layer {
 				label = "Sett.";
 				bindings = <
