@@ -60,7 +60,7 @@
 			combo_ctrl_space {
 				timeout-ms = <200>;
 				key-positions = <13 14>;
-				bindings = <&kc LC(SPACE)>;
+				bindings = <&kp LC(SPACE)>;
 			};
     };
 
