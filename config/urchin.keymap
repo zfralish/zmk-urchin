@@ -79,6 +79,7 @@
 			timeout-ms = <200>;
 			key-positions = <12 13>;
 			bindings = <&kp LC(SPACE)>;
+			layers = <BASE>;
 		};
 	};
 
