@@ -93,8 +93,8 @@
 			// &qt LGUI A  &qt LALT S  &qt LCTRL  D &qt LSHFT  F   &qt MEDIA G                      &qt RSHFT  H &qt RSHFT  J  &qt RCTRL K     &qt RALT  L   &qt RGUI  SQT
 			&kp Q       &kp W       &kp E        &kp R          &kp T                            &kp Y        &kp U         &kp I           &kp O         &kp P 
 			&kp Z       &kp X       &kp C        &kp V          &kp B                            &kp N        &kp M         &kp COMMA       &kp DOT       &kp SLASH
-					                             // &qt FUN ESC    &qt NAV SPACE                    &qt NUM BKSP &qt SYM RET 
-					                             &kp  ESC    &kp  SPACE                    &kp BKSP &kp RET 
+					                             &qt FUN ESC    &qt NAV SPACE                    &qt NUM BKSP &qt SYM RET 
+					                             // &kp  ESC    &kp  SPACE                    &kp BKSP &kp RET 
 			>;
 		};
 
