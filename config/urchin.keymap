@@ -41,7 +41,7 @@
 			bindings = <&kp>, <&kp>;
 		};
 		ql: quick_layer {
-			compatible = "zmk,behavior-hold-tap";
+			compatible = "zmk,behavior-layer-tap";
 			label = "QUICK_LAYER";
 			#binding-cells = <2>;
 			flavor = "hold-preferred";
