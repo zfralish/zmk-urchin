@@ -12,12 +12,12 @@
 
 // Layer definitions
 #define BASE 0
-#define SYM 1
-#define EXT 2
-#define FNC 3
-#define SYM2 4
-#define ACCENT 5
-#define SETTINGS 6
+// #define SYM 1
+// #define EXT 2
+// #define FNC 3
+// #define SYM2 4
+// #define ACCENT 5
+// #define SETTINGS 6
 // -----------------
 
 &sk {
@@ -27,30 +27,6 @@
 
 
 / {
-	behaviors {
-		// Enables holding the first mod-tap key
-		// by performing a tap-release-hold sequence.
-		// To use it: "&qt KEYCODE1 KEYCODE2"
-		qt: quick_tap {
-			compatible = "zmk,behavior-hold-tap";
-			label = "QUICK_TAP";
-			#binding-cells = <2>;
-			flavor = "hold-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <200>;
-			bindings = <&kp>, <&kp>;
-		};
-		ql: quick_layer {
-			compatible = "zmk,behavior-layer-tap";
-			label = "QUICK_LAYER";
-			#binding-cells = <2>;
-			flavor = "hold-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <200>;
-			bindings = <&mo>, <&kp>;
-		};
-	};
-
 	keymap {
 		compatible = "zmk,keymap";
 		// Base alpha layer
@@ -58,7 +34,7 @@
 			label = "Base";
 			bindings = <
 			&kp Q       &kp W       &kp E        &kp R          &kp T                            &kp Y        &kp U         &kp I           &kp O         &kp P 
-			&qt LGUI A  &qt LALT S  &qt LCTRL  D &qt LSHFT  F   &ql MEDIA G                      &qt RSHFT  H &qt RSHFT  J  &qt RCTRL K     &qt RALT  L   &qt RGUI  SQT
+			&mt LGUI A  &mt LALT S  &mt LCTRL  D &mt LSHFT  F   &kp  G                      &mt RSHFT  H &mt RSHFT  J  &mt RCTRL K     &mt RALT  L   &mt RGUI  SQT
 			// &kp Q       &kp W       &kp E        &kp R          &kp T                            &kp Y        &kp U         &kp I           &kp O         &kp P 
 			&kp Z       &kp X       &kp C        &kp V          &kp B                            &kp N        &kp M         &kp COMMA       &kp DOT       &kp SLASH
 					                             // &qt FUN ESC    &qt NAV SPACE                    &qt NUM BKSP &qt SYM RET 
