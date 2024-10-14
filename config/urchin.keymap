@@ -15,7 +15,8 @@
 #define FUN 1
 #define NUM 2
 #define SYM 3
-#define MEDIA 4
+#define NAV 4
+#define MEDIA 5
 // #define ACCENT 5
 // #define SETTINGS 6
 // -----------------
