@@ -78,7 +78,7 @@
 		nav_layer {
 			label = "NAV";
 			bindings = <
-			&trans &trans &trans  &trans  &trans          &kp REDO   &kp K_PASTE &kp K_COPY  &kp K_CUT &kp K_UNDO
+			&trans &trans &trans  &trans  &trans  &kp K_REDO   &kp K_PASTE &kp K_COPY  &kp K_CUT &kp K_UNDO
 			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans          &kp CAPS   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT
 			&trans &trans &trans  &trans  &trans          &kp INS    &kp HOME    &kp PG_UP   &kp PG_DN &kp END
 								           &trans  &trans          &kp BKSP   &kp DEL
