@@ -48,49 +48,49 @@
 		fun_layer {
 			label = "FUN";
 			bindings = <
-			&kp trans &kp trans &kp trans  &kp trans  &kp trans          &kp trans &kp F7 &kp F8 &kp F9 &kp F12
-			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp trans          &kp trans &kp F4 &kp F5 &kp F6 &kp F11
-			&kp trans &kp trans &kp trans  &kp trans  &kp trans          &kp trans &kp F1 &kp F2 &kp F3 &kp F10
-								           &kp trans  &kp trans          &kp TAB &kp DEL
+			&trans &trans &trans  &trans  &trans          &trans &kp F7 &kp F8 &kp F9 &kp F12
+			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans          &trans &kp F4 &kp F5 &kp F6 &kp F11
+			&trans &trans &trans  &trans  &trans          &trans &kp F1 &kp F2 &kp F3 &kp F10
+								           &trans  &trans          &kp TAB &kp DEL
 			>;
 		};
 
 		num_layer {
 			label = "NUM";
 			bindings = <
-			&kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT           &kp trans &kp trans &kp trans &kp trans &kp trans
-			&kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL          &kp trans &kp RSHFT &kp RCTRL &kp RALT  &kp RGUI  
-			&kp GRAVE &kp N1  &kp N2  &kp N3  &kp BSLH           &kp trans &kp trans &kp trans &kp trans &kp trans
-								      &kp N0  &kp MINUS          &kp trans &kp trans
+			&kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT           &trans &trans &trans &trans &trans
+			&kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL          &trans &kp RSHFT &kp RCTRL &kp RALT  &kp RGUI  
+			&kp GRAVE &kp N1  &kp N2  &kp N3  &kp BSLH           &trans &trans &trans &trans &trans
+								      &kp N0  &kp MINUS          &trans &trans
 			>;
 		};
 
 		sym_layer {
 			label = "SYM";
 			bindings = <
-			&kp LBRC  &kp AMPS &kp APOS   &kp UNDER   &kp RBRC          &kp trans &kp trans &kp trans &kp trans &kp trans
-			&kp COLON &kp DLLR &kp PRCNT  &kp CARET   &kp PLUS          &kp trans &kp RSHFT &kp RCTRL &kp RALT  &kp RGUI  
-			&kp TILDE &kp EXCL &kp AT     &kp HASH    &kp PIPE          &kp trans &kp trans &kp trans &kp trans &kp trans
-								          &kp KP_LPAR &kp KP_RPAR       &kp trans &kp trans
+			&kp LBRC  &kp AMPS &kp APOS   &kp UNDER   &kp RBRC          &trans &trans &trans &trans &trans
+			&kp COLON &kp DLLR &kp PRCNT  &kp CARET   &kp PLUS          &trans &kp RSHFT &kp RCTRL &kp RALT  &kp RGUI  
+			&kp TILDE &kp EXCL &kp AT     &kp HASH    &kp PIPE          &trans &trans &trans &trans &trans
+								          &kp KP_LPAR &kp KP_RPAR       &trans &trans
 			>;
 		};
 
 		nav_layer {
 			label = "NAV";
 			bindings = <
-			&kp trans &kp trans &kp trans  &kp trans  &kp trans          &kp REDO   &kp K_PASTE &kp K_COPY  &kp K_CUT &kp K_UNDO
-			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp trans          &kp CAPS   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT
-			&kp trans &kp trans &kp trans  &kp trans  &kp trans          &kp INS    &kp HOME    &kp PG_UP   &kp PG_DN &kp END
-								           &kp trans  &kp trans          &kp BKSP   &kp DEL
+			&trans &trans &trans  &trans  &trans          &kp REDO   &kp K_PASTE &kp K_COPY  &kp K_CUT &kp K_UNDO
+			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans          &kp CAPS   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT
+			&trans &trans &trans  &trans  &trans          &kp INS    &kp HOME    &kp PG_UP   &kp PG_DN &kp END
+								           &trans  &trans          &kp BKSP   &kp DEL
 			>;
 		};
 		media_layer {
 			label = "MEDIA";
 			bindings = <
-			&bt BT_CLR &kp trans &kp trans  &kp trans  &kp trans          &kp K_MUTE &kp trans     &kp trans    &kp trans    &kp trans
-			&kp trans  &kp trans &kp trans  &kp trans  &kp trans          &kp K_PP   &kp K_PREV    &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT
-			&kp trans  &kp trans &kp trans  &kp trans  &kp trans          &kp K_STOP &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
-								            &kp trans  &kp trans          &kp trans  &kp trans
+			&bt BT_CLR &trans &trans  &trans  &trans          &kp K_MUTE &trans     &trans    &trans    &trans
+			&trans  &trans &trans  &trans  &trans          &kp K_PP   &kp K_PREV    &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT
+			&trans  &trans &trans  &trans  &trans          &kp K_STOP &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+								            &trans  &trans          &trans  &trans
 			>;
 		};
 
