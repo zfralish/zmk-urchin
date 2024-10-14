@@ -44,7 +44,6 @@
 			>;
 		};
 
-		Numbers and high frequency symbols
 		fun_layer {
 			label = "FUN";
 			bindings = <
@@ -55,7 +54,6 @@
 			>;
 		};
 
-		Main modifiers and arrow keys
 		num_layer {
 			label = "NUM";
 			bindings = <
@@ -66,7 +64,6 @@
 			>;
 		};
 
-		Function keys with modifiers
 		sym_layer {
 			label = "SYM";
 			bindings = <
@@ -77,7 +74,6 @@
 			>;
 		};
 
-		Low frequency symbols.
 		nav_layer {
 			label = "NAV";
 			bindings = <
@@ -87,8 +83,6 @@
 								           &kp trans  &kp trans          &kp BKSP   &kp DEL
 			>;
 		};
-
-		Used to type regional accents.
 		media_layer {
 			label = "MEDIA";
 			bindings = <
