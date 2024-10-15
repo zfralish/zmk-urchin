@@ -40,7 +40,16 @@
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;    // <---[[right-hand keys]]
+        };
+        rh_pht: left_positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;    // <---[[right-hand keys]]
         };
     };
 
@@ -51,9 +60,13 @@
 		default_layer {
 			label = "Base";
 			bindings = <
+			// 0        // 1        //2          //3            //4                              // 5         // 6          // 7            // 8          // 9
 			&kp Q       &kp W       &kp E        &kp R          &kp T                            &kp Y        &kp U         &kp I           &kp O         &kp P 
+			// 10       // 11       //12         //13           //14                             //15         // 16         // 17           // 18         // 19
 			&hm LGUI A  &hm LALT S  &hm LCTRL  D &hm LSHFT  F   &lt MEDIA  G                     &hm RSHFT H  &hm RSHFT J   &hm RCTRL K     &hm RALT  L   &hm RGUI  SQT
+			// 20       // 21       // 22         // 23         // 24                            // 25        // 26         // 27           // 28         // 29
 			&kp Z       &kp X       &kp C        &kp V          &kp B                            &kp N        &kp M         &kp COMMA       &kp DOT       &kp SLASH
+									             // 30           // 31                           // 32             // 33 
 					                             &lt FUN ESC    &lt NAV SPACE                    &lt NUM BACKSPACE &lt SYM RET 
 			>;
 		};
