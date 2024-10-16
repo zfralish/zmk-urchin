@@ -68,12 +68,12 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			// 0        // 1        //2          //3            //4                              // 5         // 6          // 7            // 8          // 9
-			&kp Q       &kp W       &kp E        &kp R          &kp T                            &kp Y        &kp U         &kp I           &kp O         &kp P 
-			// 10       // 11       //12         //13           //14                             //15         // 16         // 17           // 18         // 19
-			&hm LGUI A  &hm LALT S  &hm LCTRL  D &hm LSHFT  F   &lt MEDIA  G                     &hm RSHFT H  &hm RSHFT J   &hm RCTRL K     &hm RALT  L   &hm RGUI  SQT
-			// 20       // 21       // 22         // 23         // 24                            // 25        // 26         // 27           // 28         // 29
-			&kp Z       &kp X       &kp C        &kp V          &kp B                            &kp N        &kp M         &kp COMMA       &kp DOT       &kp SLASH
+			// 0        // 1        //2          //3            //4                              // 5              // 6          // 7            // 8          // 9
+			&kp Q       &kp W       &kp E        &kp R          &kp T                            &kp Y             &kp U         &kp I           &kp O         &kp P 
+			// 10       // 11       //12         //13           //14                             //15              // 16         // 17           // 18         // 19
+			&hm LGUI A  &hm LALT S  &hm LCTRL  D &hm LSHFT  F   &lt MEDIA  G                     &hm RSHFT H       &hm RSHFT J   &hm RCTRL K     &hm RALT  L   &hm RGUI  SQT
+			// 20       // 21       // 22         // 23         // 24                            // 25             // 26         // 27           // 28         // 29
+			&kp Z       &kp X       &kp C        &kp V          &kp B                            &kp N             &kp M         &kp COMMA       &kp DOT       &kp SLASH
 									             // 30           // 31                           // 32             // 33 
 					                             &lt FUN ESC    &lt NAV SPACE                    &lt NUM BACKSPACE &lt SYM RET 
 			>;
@@ -82,10 +82,10 @@
 		fun_layer {
 			label = "FUN";
 			bindings = <
-			&trans &trans &trans  &trans  &trans          &trans &kp F7 &kp F8 &kp F9 &kp F12
-			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans          &trans &kp F4 &kp F5 &kp F6 &kp F11
-			&trans &trans &trans  &trans  &trans          &trans &kp F1 &kp F2 &kp F3 &kp F10
-								           &trans  &kp UNDER          &kp TAB &kp DEL
+			&trans    &trans    &trans     &trans     &trans             &trans  &kp F7 &kp F8 &kp F9 &kp F12
+			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans             &trans  &kp F4 &kp F5 &kp F6 &kp F11
+			&trans    &trans    &trans     &trans     &trans             &trans  &kp F1 &kp F2 &kp F3 &kp F10
+								           &trans     &kp UNDER          &kp TAB &kp DEL
 			>;
 		};
 
@@ -102,10 +102,10 @@
 		sym_layer {
 			label = "SYM";
 			bindings = <
-			&kp LBRC  &kp AMPS &kp STAR   &kp UNDER   &kp RBRC          &trans &trans &trans &trans &trans
+			&kp LBRC  &kp AMPS &kp STAR   &kp RPAR    &kp RBRC          &trans &trans    &trans    &trans    &trans
 			&kp COLON &kp DLLR &kp PRCNT  &kp CARET   &kp PLUS          &trans &kp RSHFT &kp RCTRL &kp RALT  &kp RGUI  
-			&kp TILDE &kp EXCL &kp AT     &kp HASH    &kp PIPE          &trans &trans &trans &trans &trans
-								          &kp KP_LPAR &kp KP_RPAR       &trans &trans
+			&kp TILDE &kp EXCL &kp AT     &kp HASH    &kp PIPE          &trans &trans    &trans    &trans    &trans
+								          &kp LPAR    &kp UNDER         &trans &trans
 			>;
 		};
 
