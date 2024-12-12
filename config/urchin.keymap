@@ -61,6 +61,22 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        // Your combos go here
+        tab {
+            timeout-ms = <50>;
+            key-positions = <30 31>;
+            bindings = <&kp TAB>;
+        };
+	close_paren {
+	    timeout-ms = <50>;
+	    key-positions = <30 31>;     // Keys Q and W
+	    bindings = <&kp RPAR>;
+	    layers = <2>;             // Only active on layer 1
+	};
+    };
+
 	keymap {
 
 		compatible = "zmk,keymap";
