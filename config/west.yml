@@ -9,6 +9,8 @@ manifest:
       # kyek / duckyb
     - name: duckyb
       url-base: https://github.com/duckyb
+    - name: infely
+      url-base: https://github.com/infely  
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,6 +18,9 @@ manifest:
       import: app/west.yml
     - name: urchin-zmk-module
       remote: duckyb
+      revision: main
+    - name: nice-view-battery
+      remote: infely
       revision: main
   self:
     path: config
