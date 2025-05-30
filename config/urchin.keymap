@@ -59,6 +59,9 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+		&lt {
+			quick-tap-ms = <100>;	
+		};
     };
 
     combos {
@@ -66,15 +69,15 @@
         // Your combos go here
         tab {
             timeout-ms = <50>;
-            key-positions = <30 31>;
+            key-positions = <30 33>;
             bindings = <&kp TAB>;
         };
-	close_paren {
-	    timeout-ms = <50>;
-	    key-positions = <30 31>;     // Keys Q and W
-	    bindings = <&kp RPAR>;
-	    layers = <2>;             // Only active on layer 1
-	};
+        del {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp DEL>;
+        };
+
     };
 
 	keymap {
@@ -87,7 +90,7 @@
 			// 0        // 1        //2          //3            //4                              // 5              // 6          // 7            // 8          // 9
 			&kp Q       &kp W       &kp E        &kp R          &kp T                            &kp Y             &kp U         &kp I           &kp O         &kp P 
 			// 10       // 11       //12         //13           //14                             //15              // 16         // 17           // 18         // 19
-			&hm LGUI A  &hm LALT S  &hm LCTRL  D &hm LSHFT  F   &lt MEDIA  G                     &hm RSHFT H       &hm RSHFT J   &hm RCTRL K     &hm RALT  L   &hm RGUI  SQT
+			&lh_pht LGUI A  &lh_pht LALT S  &lh_pht LCTRL  D &lh_pht LSHFT  F   &kp G            &kp H       &rh_pht RSHFT J   &rh_pht RCTRL K     &rh_pht RALT  L   &rh_pht RGUI  SQT
 			// 20       // 21       // 22         // 23         // 24                            // 25             // 26         // 27           // 28         // 29
 			&kp Z       &kp X       &kp C        &kp V          &kp B                            &kp N             &kp M         &kp COMMA       &kp DOT       &kp SLASH
 									             // 30           // 31                           // 32             // 33 
@@ -101,7 +104,7 @@
 			&trans    &trans    &trans     &trans     &trans             &trans  &kp F7 &kp F8 &kp F9 &kp F12
 			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans             &trans  &kp F4 &kp F5 &kp F6 &kp F11
 			&trans    &trans    &trans     &trans     &trans             &trans  &kp F1 &kp F2 &kp F3 &kp F10
-								           &trans     &kp UNDER          &kp TAB &kp DEL
+								           &trans     &trans             &trans &kp trans
 			>;
 		};
 
@@ -128,19 +131,19 @@
 		nav_layer {
 			label = "NAV";
 			bindings = <
-			&trans &trans &trans  &trans  &trans  &kp K_REDO   &kp K_PASTE &kp K_COPY  &kp K_CUT &kp K_UNDO
-			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans          &kp CAPS   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT
-			&trans &trans &trans  &trans  &trans          &kp INS    &kp HOME    &kp PG_UP   &kp PG_DN &kp END
-								           &trans  &trans          &kp BKSP   &kp DEL
+			&trans    &trans    &trans     &trans    &trans          &kp K_REDO &kp K_PASTE &kp K_COPY  &kp K_CUT &kp K_UNDO
+			&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT &trans          &kp CAPS   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT
+			&trans    &trans    &trans     &trans    &trans          &kp INS    &kp HOME    &kp PG_UP   &kp PG_DN &kp END
+								           &trans    &trans          &trans     &trans
 			>;
 		};
 		media_layer {
 			label = "MEDIA";
 			bindings = <
-			&bt BT_CLR &trans &trans  &trans  &trans          &kp K_MUTE &trans     &trans    &trans    &trans
-			&trans  &trans &trans  &trans  &trans          &kp K_PP   &kp K_PREV    &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT
-			&trans  &trans &trans  &trans  &trans          &kp K_STOP &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
-								            &trans  &trans          &trans  &trans
+			&bt BT_CLR &trans &trans  &trans  &trans             &kp K_MUTE &trans        &trans       &trans       &trans
+			&trans     &trans &trans  &trans  &trans             &kp K_PP   &kp K_PREV    &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT
+			&trans     &trans &trans  &trans  &trans             &kp K_STOP &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+								      &trans  &trans             &trans     &trans
 			>;
 		};
 
