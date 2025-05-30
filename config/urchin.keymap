@@ -59,7 +59,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-		&lt {
+		lt {
 			quick-tap-ms = <100>;	
 		};
     };
